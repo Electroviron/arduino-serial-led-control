@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>LED Control</title>
+  <link rel="stylesheet" href="assets/css/style.css" />
+</head>
+<body>
+  <header class="navbar">
+    <span class="brand">LED Control</span>
+    <button class="btn connect-btn connect-btn--nav" type="button">Connect MCU</button>
+  </header>
+
+  <main class="container">
+    <section class="led-row" aria-label="LED controls">
+      <button class="led-box" type="button" data-led="1" aria-pressed="false">
+        <span class="led"></span>
+        <span class="led-label">LED 1</span>
+      </button>
+      <button class="led-box" type="button" data-led="2" aria-pressed="false">
+        <span class="led"></span>
+        <span class="led-label">LED 2</span>
+      </button>
+      <button class="led-box" type="button" data-led="3" aria-pressed="false">
+        <span class="led"></span>
+        <span class="led-label">LED 3</span>
+      </button>
+    </section>
+
+    <section class="actions">
+      <button class="btn connect-btn connect-btn--main" type="button">Connect MCU</button>
+    </section>
+
+    <p class="status" id="status">Not connected</p>
+  </main>
+
+  <script type="module" src="main.js"></script>
+</body>
+</html>
